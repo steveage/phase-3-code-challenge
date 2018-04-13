@@ -2,8 +2,6 @@ class Venue
 
   ALL = []
 
-  attr_accessor :location
-
   def initialize(location)
     @location = location
     ALL << self
