@@ -2,8 +2,6 @@ class Concert
 
   ALL = []
 
-  attr_accessor :date
-
   def initialize(date)
     @date = date
     ALL << self
