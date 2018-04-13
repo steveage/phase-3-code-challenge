@@ -15,5 +15,5 @@ class Concert
 end
 
 
-#Concert should initialize with a date, concert, and venue
+#Concert should initialize with a date, band, and venue
 #Concert#band and Concert#venue should return the band and venue associated to the Concert
