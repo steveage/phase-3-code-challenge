@@ -1,6 +1,22 @@
 # Y'kids 'n yer concerts
 Okay, so you's a real concert junkie, y'know? Always seein' this band at this place and that band at the other. When does it stop? You've always been proud to rattle off the list of concerts ya seen, but you're gettin' older and the list is just gettin' longer. It's time to solve this here problem progr'mmatically, y'know? This way, when Sally Two-Shoes runs up 'n says "Hey what are all of the venues you have attended?" or "Hey where is this band from?" or "How many hometown shows have you seen?", you'll be able to get yer answer lickity split, y'know? It's gon' be great, just crush it.
 
+## Topics
+
+- Classes vs Instances
+- Variable Scope ( Class, Instance, Local )
+- Object Relationships
+- Arrays and Array Methods
+- Class Methods
+
+## Notes
+
+Your goal is to build out all of the methods listed in the deliverables.
+
+We've provided you with a console that you can use to test your code. To enter a console session, run `ruby tools/console.rb` from the command line. You'll be able to test out the methods that you write here. Take a look at that file to see how you can pre-define variables and create object instances, rather than manually doing it in every single console session.
+
+**Remember!** This is a code challenge without tests. You cannot run `rspec` you cannot run `learn`. You'll need to create your own sample instances for testing purposes. Make sure your associations and methods work in the console before submitting.
+
 ## Deliverables
 
 ### Tier One (Do these first!)
