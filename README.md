@@ -24,7 +24,7 @@ We've provided you with a console that you can use to test your code. To enter a
 #### `Band`
 - `Band` should initialize with a name and hometown
 - `Band` should respond to `Band#name` and `Band#hometown`
-- `Band` should be able to change it's name with an accessor
+- `Band` should be able to change its name with an accessor
 - `Band` should have a method `Band.all` that returns all the instances of `Band`
 - `Band` should have a method `Band.all_introductions` that puts out a message of `"Hello, we are {insert band name here} and we're from {insert hometown here}"` for each band
 
