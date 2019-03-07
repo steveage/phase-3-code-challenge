@@ -36,13 +36,13 @@ We've provided you with a console that you can use to test your code. To enter a
 ________________
 ### Tier Two (Do these last!)
 #### `Concert`
-- `Concert` should initialize with a date, band, and venue
+- `Concert` should initialize with a date (as a string), band, and venue
 - `Concert` should have methods `Concert#band` and `Concert#venue` that return the `Band` instance and `Venue` instance associated to the concert
 - `Concert` should have a `Concert.all` method which returns all the instances of `Concert`
 - `Concert` should have a method `Concert#hometown_show?` that returns true if the concert is in the band's hometown
 
 #### `Band`
-- `Band` should have a method `Band#play_in_venue` that takes a venue and date as a string as arguments and associates the band to that venue
+- `Band` should have a method `Band#play_in_venue` that takes a venue and date (as a string) as arguments and associates the band to that venue
 - `Band` should have a method `Band#concerts` should return an array of all that band's concerts
 - `Band` should have a method `Band#venues` that returns an array of all the venues the band plays in
 
