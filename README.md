@@ -44,7 +44,7 @@ ________________
 
 #### `Band`
 - `Band` should have a method `Band#play_in_venue` that takes a venue and date (as a string) as arguments and associates the band to that venue.  **Hint:  What part of the code base is responsible for associating a band and a venue?**
-- `Band` should have a method `Band#concerts` should return an array of all the concernts that the band has played in
+- `Band` should have a method `Band#concerts` should return an array of all the concerts that the band has played in
 
 #### `Venue`
 - `Venue` should have a method `Venue#concerts` that lists all the concerts that have ever been performed in that venue
