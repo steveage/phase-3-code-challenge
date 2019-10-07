@@ -34,41 +34,82 @@ Do your best to follow Ruby best practices. For example, use higher-level array 
 
 Write the following methods in the classes in the files provided. Feel free to build out any helper methods if needed.
 
-### Tier One (Do these first!)
+Deliverables use the notation `#` for instance methods, and `.` for class methods.
 
-#### `Band`
+Some of the methods listed are provided to you in the starter code. You should check that they work correctly, and that you understand them.
 
-- `Band` should initialize with a name and hometown
-- `Band` should respond to `Band#name` and `Band#hometown`, returning those respective values.
-- `Band` should be able to change its name with an accessor
-- `Band` should have a method `Band.all` that returns all the instances of `Band`
-- `Band` should have a method `Band.all_introductions` that puts out a list of messages in the format of `"Hello, we are {insert band name here} and we're from {insert hometown here}"` for every band.
+### Initializers, Readers, and Writers
 
-#### `Venue`
+#### Band
 
-- `Venue` should initialize with a title and city
-- `Venue` should have a method `Venue.all` method which returns all the instances of `Venue`
+- `Band.initialize(name, hometown)`
+  - should initialize with a name (string) and hometown (string)
+- `Band#name`
+  - should return the `Band`'s name
+  - should be able to change its name after creation
+- `Band#hometown`
+  - should return the `Band`'s hometown
+  - should not be able to change its hometown after creation
+- `Band.all`
+  - returns an array of all the instances of `Band`
 
----
+#### Venue
 
-### Tier Two (Do these last!)
+- `Venue.initialize(title, city)`
+  - should initialize with a title (string) and city (string)
+- `Venue#title`
+  - should return the title of the venue
+  - should be able to change its title after creation
+- `Venue#city`
+  - should return the city of the venue
+  - should not be able to change its city after creation
+- `Venue.all`
+  - returns all the instances of `Venue`
 
-#### `Concert`
+#### Concert
 
-- `Concert` should initialize with a date (as a string), band, and venue
-- `Concert` should have methods `Concert#band` and `Concert#venue` that return the `Band` instance and `Venue` instance associated to the concert
-- `Concert` should have a `Concert.all` method which returns all the instances of `Concert`
-- `Concert` should have a method `Concert#hometown_show?` that returns true if the concert is in the band's hometown and false if it is not
+- `Concert.initialize(date, band, venue)`
+  - should initialize with a date (string), band, and venue
+- `Concert.all`
+  - should return all instances of `Concert`
 
-#### `Band`
+### Object Relationship Methods
 
-- `Band` should have a method `Band#play_in_venue` that takes a venue and date (as a string) as arguments and associates the band to that venue. **Hint: What part of the code base is responsible for associating a band and a venue?**
-- `Band` should have a method `Band#concerts` should return an array of all the concerts that the band has played in
+#### Concert
 
-#### `Venue`
+- `Concert#band`
+  - should return the `Band` instance for this concert
+- `Concert#venue`
+  - should return the `Venue` instance for this concert
 
-- `Venue` should have a method `Venue#concerts` that lists all the concerts that have ever been performed in that venue
-- `Venue` should have a method `Venue#bands` that lists all the bands that have ever played in that venue
+#### Venue
+
+- `Venue#concerts`
+  - returns an array of all the concerts for the venue
+- `Venue#bands`
+  - returns an array of all the bands for the venue
+
+#### Band
+
+- `Band#concerts`
+  - should return an array of all the concerts that the band has played in
+
+### Aggregate and Association Methods
+
+#### Venue
+
+#### Concert
+
+- `Concert#hometown_show?`
+  - returns `true` if the concert is in the band's hometown, `false` if it is not
+
+#### Band
+
+- `Band#play_in_venue(venue, date)`
+  - takes a venue and date (as a string) as arguments, and creates a new concert for the band in that venue on that date
+- `Band.all_introductions`
+  - returns an array of strings representing the introductions for all of the bands.
+  - an introduction is in the form `"Hello, we are {insert band name here} and we're from {insert hometown here}"`
 
 ## Rubric
 
