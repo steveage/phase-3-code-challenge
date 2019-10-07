@@ -96,8 +96,6 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 ### Aggregate and Association Methods
 
-#### Venue
-
 #### Concert
 
 - `Concert#hometown_show?`
@@ -110,6 +108,15 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Band.all_introductions`
   - returns an array of strings representing the introductions for all of the bands.
   - an introduction is in the form `"Hello, we are {insert band name here} and we're from {insert hometown here}"`
+
+#### Venue
+
+- `Venue#concert_on(date)`
+  - takes a date (string) as argument
+  - finds and returns the first concert on that date at that venue
+  - if there is no concert on that date at that venue, returns `nil`
+- `Venue#most_frequent_band`
+  - returns the band with the most concerts at the venue
 
 ## Rubric
 
