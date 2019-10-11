@@ -42,7 +42,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Band
 
-- `Band.initialize(name, hometown)`
+- `Band#initialize(name, hometown)`
   - should initialize with a name (string) and hometown (string)
 - `Band#name`
   - should return the `Band`'s name
@@ -55,7 +55,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Venue
 
-- `Venue.initialize(title, city)`
+- `Venue#initialize(title, city)`
   - should initialize with a title (string) and city (string)
 - `Venue#title`
   - should return the title of the venue
@@ -68,7 +68,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Concert
 
-- `Concert.initialize(date, band, venue)`
+- `Concert#initialize(date, band, venue)`
   - should initialize with a date (string), band, and venue
 - `Concert.all`
   - should return all instances of `Concert`
