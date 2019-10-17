@@ -40,7 +40,9 @@ Write the following methods in the classes in the files provided. Feel free to b
 
 Deliverables use the notation `#` for instance methods, and `.` for class methods.
 
-Some of the methods listed are provided to you in the starter code. You should check that they work correctly, and that you understand them.### Initializers, Readers, and Writers
+Some of the methods listed are provided to you in the starter code. You should check that they work correctly, and that you understand them.
+
+### Initializers, Readers, and Writers
 
 #### Band
 
