@@ -102,14 +102,17 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 - `Concert#hometown_show?`
   - returns `true` if the concert is in the band's hometown, `false` if it is not
+- `Concert#introduction`
+  - returns a string with the band's introduction for this concert
+  - an introduction is in the form: `"Hello {insert city name here}!!!!!, we are {insert band name here} and we're from {insert hometown here}"`
 
 #### Band
 
 - `Band#play_in_venue(venue, date)`
   - takes a venue and date (as a string) as arguments, and creates a new concert for the band in that venue on that date
-- `Band.all_introductions`
-  - returns an array of strings representing the introductions for all of the bands.
-  - an introduction is in the form `"Hello, we are {insert band name here} and we're from {insert hometown here}"`
+- `Band#all_introductions`
+  - returns an array of strings representing all the introductions for this band
+  - each introduction is in the form `"Hello {insert city name here}!!!!!, we are {insert band name here} and we're from {insert hometown here}"`
 
 #### Venue
 
