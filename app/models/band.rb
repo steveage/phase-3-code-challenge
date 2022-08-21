@@ -2,14 +2,13 @@ class Band
     attr_accessor :name
     attr_accessor :concerts
     attr_reader :hometown
-
     @@all = []
 
     def initialize(name, hometown)
         @name = name
         @hometown = hometown
-        @@all << self
         @concerts = []
+        @@all << self
     end
 
     def self.all
@@ -17,10 +16,7 @@ class Band
     end
 
     def play_in_venue(venue, date)
-        concert = Concert.new(date, self, venue)
-        venue.concerts << concert
-        @concerts << concert
-        venue.bands << self
+        Concert.new(date, self, venue)
     end
 
     def all_introductions

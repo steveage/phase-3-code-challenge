@@ -8,9 +8,9 @@ class Venue
     def initialize(title, city)
         @title = title
         @city = city
-        @@all << self
         @concerts = []
         @bands = []
+        @@all << self
     end
 
     def self.all

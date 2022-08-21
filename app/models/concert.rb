@@ -7,7 +7,15 @@ class Concert
     def initialize(date, band, venue)
         @date = date
         @band = band
+        venue.concerts << self
+        venue.bands << band
+        band.concerts << self
         @venue = venue
+        @@all << self
+    end
+
+    def self.all
+        @@all
     end
 
     def hometown_show?
